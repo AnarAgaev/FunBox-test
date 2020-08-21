@@ -7,6 +7,7 @@ import Spinner from "../../spinner";
 import ErrorIndicator from "../../error-indicator";
 import { Helmet } from "react-helmet";
 import { Container } from "react-bootstrap";
+import CardList from "../../card-list";
 import './main.scss';
 
 class Main extends Component {
@@ -31,13 +32,12 @@ class Main extends Component {
     return (
       <>
         <Helmet>
-          <title>Главная страница</title>
+          <title>FunBox test | Главная страница</title>
           <meta name="description" content="" />
           <meta name="keywords" content="" />
         </Helmet>
-        <Container>
-          <h1>Ты сегодня покормил кота?</h1>
-        </Container>
+        <h1>Ты сегодня покормил кота?</h1>
+        <CardList data={ data } />
       </>
     );
   }

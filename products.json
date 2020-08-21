@@ -5,16 +5,16 @@
     "title": "Сказочное заморское яство",
     "name": "Нямушка",
     "stuffing": "с фуа-гра",
-    "portions-count": "10",
-    "portions-text": "порций",
-    "bonus-count": "",
-    "bonus-text": "мышь в подарок",
+    "portionsCount": "10",
+    "portionsText": "порций",
+    "bonusCount": "",
+    "bonusText": "мышь в подарок",
     "mark": "",
     "weight": "0,5",
-    "picture": "cat.jpg",
+    "picture": "cat.png",
     "mount": "3",
     "description": "Печень утки разварная с артишоками.",
-    "description-ended": "Печалька, с фуа-гра закончился."
+    "descriptionEnded": "Печалька, с фуа-гра закончился."
   },
   {
     "id": 2,
@@ -22,16 +22,16 @@
     "title": "Сказочное заморское яство",
     "name": "Нямушка",
     "stuffing": "с рыбой",
-    "portions-count": "40",
-    "portions-text": "порций",
-    "bonus-count": "2",
-    "bonus-text": "мыши в подарок",
+    "portionsCount": "40",
+    "portionsText": "порций",
+    "bonusCount": "2",
+    "bonusText": "мыши в подарок",
     "mark": "",
     "weight": "2",
-    "picture": "cat.jpg",
+    "picture": "cat.png",
     "mount": "5",
     "description": "Головы щучьи с чесноком да свежайшая сёмгушка.",
-    "description-ended": "Печалька, с рыбой закончился."
+    "descriptionEnded": "Печалька, с рыбой закончился."
   },
   {
     "id": 3,
@@ -39,15 +39,15 @@
     "title": "Сказочное заморское яство",
     "name": "Нямушка",
     "stuffing": "с курой",
-    "portions-count": "100",
-    "portions-text": "порций",
-    "bonus-count": "5",
-    "bonus-text": "мышей в подарок",
+    "portionsCount": "100",
+    "portionsText": "порций",
+    "bonusCount": "5",
+    "bonusText": "мышей в подарок",
     "mark": "заказчик доволен",
     "weight": "5",
-    "picture": "cat.jpg",
+    "picture": "cat.png",
     "mount": "0",
     "description": "Филе из цыплят с трюфелями в бульоне.",
-    "description-ended": "Печалька, с курой закончился."
+    "descriptionEnded": "Печалька, с курой закончился."
   }
 ]

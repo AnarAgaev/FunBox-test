@@ -9,7 +9,7 @@ const PageNotFound = () => {
   return (
     <>
       <Helmet>
-        <title>Страница не найдена</title>
+        <title>FunBox test | Страница не найдена</title>
         <meta name="description" content="" />
         <meta name="keywords" content="" />
       </Helmet>
