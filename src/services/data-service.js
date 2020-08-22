@@ -9,7 +9,7 @@ export default class DataService {
       setTimeout(() => {
         resolve(json);
         reject(new Error('Ошибка. К сожалению, не удалось полуычить данные!'));
-      }, 300);
+      }, 1000);
     });
   }
 }

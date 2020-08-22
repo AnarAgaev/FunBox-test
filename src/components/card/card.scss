@@ -1,6 +1,29 @@
+@import "../app/variables";
+
 .card {
   width: 320px;
   cursor: pointer;
+
+  &.selected-hover {
+    .card__title {
+      color: $clr-sel-hov;
+    }
+  }
+
+  &:hover {
+    .card__corner::before {
+      background-color: $clr-dis-hov;
+    }
+
+    .card__title,
+    .card__body {
+      border-color: $clr-dis-hov;
+    }
+
+    .card__weight {
+      background-color: $clr-dis-hov;
+    }
+  }
 
   &__list {
     display: flex;
@@ -14,6 +37,77 @@
 
     @media (max-width: 577px) {
       margin: 0 0 40px;
+    }
+
+    // Styles for locked card
+    &.locked {
+      .card {
+        cursor: default;
+      }
+
+      .card__corner::before {
+        background-color: $clr-locked;
+      }
+
+      .card__title,
+      .card__body {
+        border-color: $clr-locked;
+      }
+
+      .card__name,
+      .card__title,
+      .card__stuffing,
+      .card__portions,
+      .card__bonus,
+      .card__mark,
+      .card__portions-count,
+      .card__bonus-count {
+        color: $clr-locked;
+      }
+
+      .card__picture {
+        opacity: .5;
+      }
+
+      .card__weight {
+        background-color: $clr-locked;
+      }
+
+      .card__caption {
+        color: #ffff66;
+      }
+    }
+
+    // Styles for selected card
+    &.selected {
+      .card__corner::before {
+        background-color: $clr-sel;
+      }
+
+      .card__title,
+      .card__body {
+        border-color: $clr-sel;
+      }
+
+      .card__weight {
+        background-color: $clr-sel;
+      }
+
+      .card:hover {
+        .card__corner::before {
+          background-color: $clr-sel-hov;
+        }
+
+        .card__title,
+        .card__body {
+          border-color: $clr-sel-hov;
+        }
+
+        .card__weight {
+          background-color: $clr-sel-hov;
+        }
+      }
+
     }
   }
 
@@ -34,12 +128,13 @@
       display: block;
       position: absolute;
       left: 50%;
-      top: 50%;
+      top: calc(50% - 1px);
       width: 64px;
       height: 4px;
-      background-color: #1698d9;
+      background-color: $clr-dis;
       z-index: 99;
       transform: translateX(-50%) rotate(-45deg);
+      transition: $trans-base;
     }
 
     &::after {
@@ -63,22 +158,24 @@
     padding-left: 4px;
     background-color: #f2f2f2;
     border-top-right-radius: 12px;
-    border-top: 4px solid #1698d9;
-    border-right: 4px solid #1698d9;
+    border-top: 4px solid $clr-dis;
+    border-right: 4px solid $clr-dis;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    transition: $trans-base;
   }
 
   &__body {
     background-color: #f2f2f2;
     border-bottom-right-radius: 12px;
     border-bottom-left-radius: 12px;
-    border: 4px solid #1698d9;
+    border: 4px solid $clr-dis;
     border-top: none;
     overflow: hidden;
     position: relative;
     height: 435px;
+    transition: $trans-base;
   }
 
   &__name {
@@ -128,7 +225,7 @@
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background-color: #1698d9;
+    background-color: $clr-dis;
     position: absolute;
     right: 11px;
     bottom: 11px;
@@ -140,6 +237,7 @@
     color: rgb(255, 255, 255);
     line-height: 0.524;
     padding-top: 20px;
+    transition: $trans-base;
 
     &::after {
       content: 'кг';
@@ -159,10 +257,10 @@
   }
 
   &__link {
-    color: #1698d9;
-    border-bottom: 1px dashed #1698d9;
+    color: $clr-dis;
+    border-bottom: 1px dashed $clr-dis;
     cursor: pointer;
-    transition: border-bottom-color .3s;
+    transition: $trans-base;
 
     &:hover {
       border-bottom-color: transparent;
@@ -170,6 +268,6 @@
   }
 
   &__point {
-    color: #1698d9;
+    color: $clr-dis;
   }
 }

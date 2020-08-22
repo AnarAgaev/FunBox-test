@@ -63,9 +63,7 @@ body {
     transform: translateX(-25%);
     z-index: -1;
   }
-
 }
-
 
 // Lists
 ul {
@@ -101,7 +99,7 @@ h1 {
   color: rgb(255, 255, 255);
   line-height: 1.2;
   text-align: center;
-  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.004);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.004);
   position: relative;
   left: 2px;
 }
@@ -110,4 +108,9 @@ h1 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+p {
+  color: white;
+  text-align: center;
 }

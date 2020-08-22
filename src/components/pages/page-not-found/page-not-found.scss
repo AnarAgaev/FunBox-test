@@ -1,3 +1,36 @@
-.pnf-pic {
-  max-width: 500px;
+@import "../../app/variables";
+
+.pnf {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+
+  &__pic {
+    max-width: 300px;
+  }
+
+  p {
+    max-width: 500px;
+  }
+
+  a {
+    display: inline-block;
+    padding: 1.5rem 2.5rem;
+    font-weight: bold;
+    background-color: $clr-sel;
+    border-radius: 12px;
+    color: white;
+    text-decoration: none;
+    margin-top: 30px;
+    transition: $trans-base;
+    text-align: center;
+
+    &:hover {
+      background-color: $clr-sel-hov;
+    }
+  }
+
+
 }
