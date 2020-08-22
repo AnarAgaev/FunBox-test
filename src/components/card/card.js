@@ -24,7 +24,7 @@ class Card extends Component {
                           <span className="card__point">.</span>
                         </div>;
 
-    const clazz = mount === 0
+    const clazz = mount === "0"
       ? 'card__item locked'
       : selected
         ? 'card__item selected'
@@ -33,7 +33,7 @@ class Card extends Component {
     return (
       <li className={ clazz } >
         <div className={ selectedHover ? "card selected-hover" : "card" }
-             onClick={() => toggleSelect(id)}
+             onClick={() => toggleSelect(id, mount)}
              onMouseEnter={() => hoverOnSelected(id, selected)}
              onMouseLeave={() => leaveOnSelected(id, selected)}
         >
@@ -74,7 +74,7 @@ class Card extends Component {
         </div>
 
         <div className="card__caption">
-          { mount !== 0
+          { mount !== "0"
               ? selected
                   ? description
                   : cardCaption
@@ -87,7 +87,7 @@ class Card extends Component {
 
 const mapDispatchToProps = (dispatch) => {
   return  {
-    toggleSelect: (id) => toggleSelect(dispatch, id),
+    toggleSelect: (id, mount) => toggleSelect(dispatch, id, mount),
     hoverOnSelected: (id, selected) => hoverOnSelected(dispatch, id, selected),
     leaveOnSelected: (id, selected) => leaveOnSelected(dispatch, id, selected)
   }

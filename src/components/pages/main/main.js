@@ -9,6 +9,7 @@ import { Helmet } from "react-helmet";
 import CardList from "../../card-list";
 
 import './main.scss';
+import {Link} from "react-router-dom";
 
 class Main extends Component {
   componentDidMount() {
@@ -38,6 +39,10 @@ class Main extends Component {
         </Helmet>
         <h1>Ты сегодня покормил кота?</h1>
         <CardList data={ data } />
+        <Link to="/edit-data"
+              className="button button_edit-data" >
+          Редактировать данные
+        </Link>
       </>
     );
   }

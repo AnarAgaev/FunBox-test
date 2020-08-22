@@ -30,6 +30,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    max-width: 100vw;
   }
 
   &__item {
@@ -150,11 +151,11 @@
   }
 
   &__title {
-    height: 45px;
+    height: 47px;
     width: 275px;
     position: absolute;
     right: 0;
-    padding-top: 12px;
+    padding-top: 10px;
     padding-left: 4px;
     background-color: #f2f2f2;
     border-top-right-radius: 12px;

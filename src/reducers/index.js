@@ -93,6 +93,25 @@ const reducer = (state, action) => {
         data: newLeaveData
       };
 
+    case 'CHANGE_PROPERTY':
+      const changeCardIdx =  state.data.findIndex((el) => el.id === action.id);
+      const oldChangeCard = state.data[changeCardIdx];
+      const changedCard = {
+        ... oldChangeCard,
+        [action.property]: action.value,
+        selected: !(action.property === 'mount' && action.value === '0')
+      };
+
+      const changedCardData = [
+        ...state.data.slice(0, changeCardIdx),
+        changedCard,
+        ...state.data.slice(changeCardIdx + 1)
+      ];
+      return {
+        ...state,
+        data: changedCardData
+      };
+
     default:
       return state;
   }
