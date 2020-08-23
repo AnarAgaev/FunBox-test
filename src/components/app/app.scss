@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap');
 
+// Added custom fonts
+@import "../../fonts/fonts.css";
+
+// Added variables of styles
 @import "variables";
 
 * {
@@ -40,7 +44,7 @@ body,
 }
 
 body {
-  font-family: "Trebuchet MS", serif;
+  font-family: "TrebuchetMS", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -146,5 +150,30 @@ p {
 
   &:hover {
     background-color: $clr-dis-hov;
+  }
+
+  &_to-back,
+  &_edit-data {
+    padding: 1.7rem 2rem 1.7rem 1.2rem;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 15px;
+      top: 0;
+      width: 25px;
+      height: 100%;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &_edit-data::before {
+    background-image: url("../../images/edit-regular.svg");
+  }
+
+  &_to-back::before {
+    background-image: url("../../images/reply-solid.svg");
   }
 }

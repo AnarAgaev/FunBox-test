@@ -41,7 +41,6 @@ class Main extends Component {
         <CardList data={ data } />
         <Link to="/edit-data"
               className="button button_edit-data" >
-          Редактировать данные
         </Link>
       </>
     );

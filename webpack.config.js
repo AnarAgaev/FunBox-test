@@ -99,6 +99,16 @@ module.exports = (env = {}) => {
               }
             }
           ]
+        },
+
+        // Loading fonts
+        {
+          test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+          loader: 'file-loader',
+          options: {
+            outputPath: 'fonts',
+            name: '[name].[ext]'
+          }
         }
       ]
     },

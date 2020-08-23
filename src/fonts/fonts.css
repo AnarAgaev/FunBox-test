@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'TrebuchetMS';
+  src: url('TrebuchetMS-Regular/TrebuchetMS.svg#TrebuchetMS') format('svg'),
+  url('TrebuchetMS-Regular/TrebuchetMS.ttf') format('truetype'),
+  url('TrebuchetMS-Regular/TrebuchetMS.woff') format('woff'),
+  url('TrebuchetMS-Regular/trebuc.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TrebuchetMS';
+  src: url('TrebuchetMS-Bold/TrebuchetMS-Bold.svg#TrebuchetMS-Bold') format('svg'),
+  url('TrebuchetMS-Bold/TrebuchetMS-Bold.ttf') format('truetype'),
+  url('TrebuchetMS-Bold/TrebuchetMS-Bold.woff') format('woff'),
+  url('TrebuchetMS-Bold/trebucbd.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}

@@ -17,8 +17,8 @@ const EditData = ({ data }) => {
 
       <form className="form-edit">
         <ControllerGroupList data={ data } />
-        <Link to="/" className="button">
-          Вернуться на главную
+        <Link to="/"
+              className="button button_to-back">
         </Link>
       </form>
     </>
