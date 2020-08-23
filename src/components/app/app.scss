@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap');
+@import url(//db.onlinewebfonts.com/c/03e852a9d1635cf25800b41001ee80c7?family=Trebuchet+MS);
 
 // Added custom fonts
-@import "../../fonts/fonts.css";
+//@import "../../fonts/fonts.css";
 
 // Added variables of styles
 @import "variables";
@@ -44,7 +45,7 @@ body,
 }
 
 body {
-  font-family: "TrebuchetMS", serif;
+  font-family: "Trebuchet MS", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
