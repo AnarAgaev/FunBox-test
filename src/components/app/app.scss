@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap');
-@import url(//db.onlinewebfonts.com/c/03e852a9d1635cf25800b41001ee80c7?family=Trebuchet+MS);
 
 // Added custom fonts
-//@import "../../fonts/fonts.css";
+@import "../../fonts/fonts.css";
 
 // Added variables of styles
 @import "variables";
@@ -17,7 +16,8 @@ body,
 .main,
 #root {
   min-height: 100vh;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 #root {
@@ -51,7 +51,6 @@ body {
   font-size: 16px;
   color: #000000;
   line-height: 1.3;
-  overflow-x: hidden;
 
   &::before {
     content: "";
