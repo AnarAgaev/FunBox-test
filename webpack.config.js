@@ -107,7 +107,7 @@ module.exports = (env = {}) => {
           loader: 'file-loader',
           options: {
             outputPath: 'fonts',
-            name: '[name].[ext]'
+            name: '[name]-[hash:10].[ext]'
           }
         }
       ]

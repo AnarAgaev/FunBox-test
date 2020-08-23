@@ -1,19 +1,43 @@
-@font-face {
-  font-family: 'TrebuchetMS';
-  src: url('TrebuchetMS-Regular/TrebuchetMS.svg#TrebuchetMS') format('svg'),
-  url('TrebuchetMS-Regular/TrebuchetMS.ttf') format('truetype'),
-  url('TrebuchetMS-Regular/TrebuchetMS.woff') format('woff'),
-  url('TrebuchetMS-Regular/trebuc.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
+/*@font-face {*/
+/*  font-family: 'Trebuchet MS';*/
+/*  src: url('TrebuchetMS/Trebuchet-BoldItalic.eot');*/
+/*  src: local('Trebuchet MS Bold Italic'), local('Trebuchet-BoldItalic'),*/
+/*  url('TrebuchetMS/Trebuchet-BoldItalic.eot?#iefix') format('embedded-opentype'),*/
+/*  url('TrebuchetMS/Trebuchet-BoldItalic.woff') format('woff'),*/
+/*  url('TrebuchetMS/Trebuchet-BoldItalic.ttf') format('truetype');*/
+/*  font-weight: bold;*/
+/*  font-style: italic;*/
+/*}*/
 
 @font-face {
   font-family: 'TrebuchetMS';
-  src: url('TrebuchetMS-Bold/TrebuchetMS-Bold.svg#TrebuchetMS-Bold') format('svg'),
-  url('TrebuchetMS-Bold/TrebuchetMS-Bold.ttf') format('truetype'),
-  url('TrebuchetMS-Bold/TrebuchetMS-Bold.woff') format('woff'),
-  url('TrebuchetMS-Bold/trebucbd.woff2') format('woff2');
+  src: url('TrebuchetMS/TrebuchetMS-Bold.eot');
+  src: local('Trebuchet MS Bold'), local('TrebuchetMS-Bold'),
+  url('TrebuchetMS/TrebuchetMS-Bold.eot?#iefix') format('embedded-opentype'),
+  url('TrebuchetMS/TrebuchetMS-Bold.woff') format('woff'),
+  url('TrebuchetMS/TrebuchetMS-Bold.ttf') format('truetype');
   font-weight: bold;
+  font-style: normal;
+}
+
+/*@font-face {*/
+/*  font-family: 'Trebuchet MS';*/
+/*  src: url('TrebuchetMS/TrebuchetMS-Italic.eot');*/
+/*  src: local('Trebuchet MS Italic'), local('TrebuchetMS-Italic'),*/
+/*  url('TrebuchetMS/TrebuchetMS-Italic.eot?#iefix') format('embedded-opentype'),*/
+/*  url('TrebuchetMS/TrebuchetMS-Italic.woff') format('woff'),*/
+/*  url('TrebuchetMS/TrebuchetMS-Italic.ttf') format('truetype');*/
+/*  font-weight: normal;*/
+/*  font-style: italic;*/
+/*}*/
+
+@font-face {
+  font-family: 'TrebuchetMS';
+  src: url('TrebuchetMS/TrebuchetMS.eot');
+  src: local('Trebuchet MS'), local('TrebuchetMS'),
+  url('TrebuchetMS/TrebuchetMS.eot?#iefix') format('embedded-opentype'),
+  url('TrebuchetMS/TrebuchetMS.woff') format('woff'),
+  url('TrebuchetMS/TrebuchetMS.ttf') format('truetype');
+  font-weight: normal;
   font-style: normal;
 }
